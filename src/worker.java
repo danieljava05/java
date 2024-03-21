@@ -4,7 +4,7 @@ public class worker {
     private String endDate;
 
     public worker(String birthDate) {
-        this.birthDate = birthDate;
+//        this.birthDate = birthDate;
     }
     public int getAge(){
         String[] n = birthDate.split("/");
