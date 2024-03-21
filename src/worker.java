@@ -3,7 +3,9 @@ public class worker {
     private String birthDate;
     private String endDate;
     private double pay;
-
+    public worker(){
+        this.name = "Worker";
+    }
     public worker(String name,String birthDate) {
         this.birthDate = birthDate;
         this.name = name;
