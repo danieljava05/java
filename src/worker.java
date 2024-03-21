@@ -2,10 +2,12 @@ public class worker {
     private String name;
     private String birthDate;
     private String endDate;
+    private double pay;
 
     public worker(String name,String birthDate) {
         this.birthDate = birthDate;
         this.name = name;
+        this.pay = 15000;
 
         this.endDate = (getAge() > 50) ? "Your endDate is in the year "+convert(getAge()) :  "You are not yet retired" ;
     }
@@ -22,6 +24,9 @@ public class worker {
         int convert = Integer.parseInt(getage);
         return convert + birth;
     }
+    public double collectPay(){
+       return this.pay = pay * 2;
+    }
 
 
     @Override
@@ -31,6 +36,7 @@ public class worker {
                 ", birthDate='" + birthDate + '\'' +
                 ", endDate='" + endDate + '\'' +
                 ", Age ='" + getAge() + '\'' +
+                ", pay ='" + collectPay() + '\'' +
                 '}';
     }
 }
